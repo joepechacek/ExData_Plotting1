@@ -12,7 +12,7 @@
 # format in the file is D/M/YYYY so I am loading 1/2/2007 and 2/2/2007
 
 data <- subset(read.table("household_power_consumption.txt", header = T, 
-                          sep = ";", stringsAsFactors = F,), 
+                          sep = ";", stringsAsFactors = F), 
                Date %in% c("1/2/2007", "2/2/2007"))
 
 # Now that the Master Data file for only the dates I need is loaded, we can 
